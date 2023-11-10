@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="Equationator.PhysicsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Equationator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#8ABCD7">
+
+    <Grid>
+        
+        <Grid>
+            <local:UserNav VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
+        </Grid>
+
+        <Grid>
+            <local:LessonsNav />
+        </Grid>
+
+        <Grid>
+            <TextBox x:Name="FunFactsTextBox" Margin="0,0,750,0" Width="300" Height="150" IsReadOnly="True" TextWrapping="Wrap" Text="" />
+        </Grid>
+
+        <RichTextBlock Width="300" Height="450" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <RichTextBlock.Blocks>
+                <Paragraph TextAlignment="Left">
+                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text=" Physics Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." FontWeight="Bold" Foreground="white" FontSize="18" />
+                </Paragraph>
+            </RichTextBlock.Blocks>
+        </RichTextBlock>
+    </Grid>
+</Page>
