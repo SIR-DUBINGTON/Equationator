@@ -15,17 +15,43 @@
         </Grid>
 
         <Grid>
-            <local:LessonsNav />
+
+            <!-- Your lesson content goes here -->
+
+            <!-- Navigation buttons -->
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="0,0,0,20">
+                <Button Click="NavigateToPhysicsPage" Background="#8ABCD7" BorderBrush="White" 
+                        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Physics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                        <Image Height="36" Width="36" Source="/Assets/physicsPicWhite2.png" />
+                    </StackPanel>
+                </Button>
+                <Button Click="NavigateToMathsPage" Background="#8ABCD7" BorderBrush="White" 
+                        Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Mathematics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                        <Image Height="36" Width="36" Source="/Assets/mathsPicWhite.png" />
+                    </StackPanel>
+                </Button>
+                <Button Click="NavigateToAstroPage" Background="#8ABCD7" BorderBrush="White" 
+                        Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="15,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Astrophysics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                        <Image Height="36" Width="36" Source="Assets/astroPicWhite.png"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
         </Grid>
 
         <Grid>
-            <TextBox x:Name="FunFactsTextBox" Margin="0,0,750,0" Width="300" Height="150" IsReadOnly="True" TextWrapping="Wrap" Text="" />
+            <TextBox x:Name="FunFactsTextBox" Foreground="White" FontFamily="/Assets/Armata-Regular.ttf#Armata" Margin="0,0,750,0" Width="300" Height="175" IsReadOnly="True" TextWrapping="Wrap" Text="" BorderBrush="White"/>
         </Grid>
 
-        <RichTextBlock Width="300" Height="450" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <RichTextBlock Width="300" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <RichTextBlock.Blocks>
                 <Paragraph TextAlignment="Left">
-                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text=" Physics Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum." FontWeight="Bold" Foreground="white" FontSize="18" />
+                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Physics is the branch of science that explores the fundamental principles governing the natural world, aiming to understand the fundamental laws that govern the behavior of matter, energy, space, and time. It seeks to explain the complexities of the universe, from the smallest particles at the quantum level to the vast expanses of galaxies. The importance of physics lies in its ability to uncover the underlying principles of the cosmos, enabling us to develop new technologies, make informed decisions, and deepen our appreciation of the intricate beauty of the universe." FontWeight="Bold" Foreground="white" FontSize="18" />
                 </Paragraph>
             </RichTextBlock.Blocks>
         </RichTextBlock>

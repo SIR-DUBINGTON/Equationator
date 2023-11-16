@@ -74,7 +74,7 @@
                             </StackPanel>
                         </ListBoxItem>
 
-                        <ListBoxItem Name="BackButton_Click" Margin="0,375,0,0">
+                        <ListBoxItem Name="BackButton_Click" Margin="0,385,0,0">
                             <StackPanel Orientation="Horizontal">
                                 <TextBlock FontFamily="Segoe MDL2 Assets" Foreground="#8ABCD7"   FontSize="28" Text="&#xE248;"/>
                                 <TextBlock Text="BACK" Foreground="#8ABCD7"  FontSize="24" FontFamily="/Assets/Armata-Regular.ttf#Armata"   Margin="20,0,0,0"/>

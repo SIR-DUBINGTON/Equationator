@@ -20,26 +20,26 @@ namespace Equationator
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SolverPage : Page
+    public sealed partial class PhysicsSolverPage : Page
     {
-        public SolverPage()
+        public PhysicsSolverPage()
         {
             this.InitializeComponent();
+
+
         }
 
-        private void PhysicsButton_Click(object sender, RoutedEventArgs e)
+        private void SolveForF_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(PhysicsSolverPage));
+            Frame.Navigate(typeof(SolveForForce));
         }
 
-        private void MathButton_Click(object sender, RoutedEventArgs e)
+        private void SolveForM_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MathsPage));
+            Frame.Navigate(typeof(SolveForMass));
         }
+ 
 
-        private void AstroButton_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(AstroPage));
-        }
     }
+
 }

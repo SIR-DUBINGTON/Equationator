@@ -18,22 +18,52 @@
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="15" />
                 <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="15" />
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
 
-            <Button Content="Physics" Grid.Row="1" Grid.Column="2" Click="PhysicsButton_Click" />
-            <Button Content="Mathematics" Grid.Row="1" Grid.Column="3" Click="MathButton_Click" />
-            <Button Content="Astrophysics" Grid.Row="1" Grid.Column="4" Click="AstroButton_Click" />
+            <!-- First Button -->
+            <Button Click="PhysicsButton_Click" Background="#8ABCD7" BorderBrush="White" 
+            Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Physics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="/Assets/physicsPicWhite2.png" />
+                </StackPanel>
+            </Button>
+
+            <!-- Second Button -->
+            <Button Click="MathButton_Click" Background="#8ABCD7" BorderBrush="White" 
+            Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Mathematics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="/Assets/mathsPicWhite.png" />
+                </StackPanel>
+            </Button>
+
+            <!-- Third Button -->
+            <Button Click="AstroButton_Click" Background="#8ABCD7" BorderBrush="White" 
+            Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Astrophysics" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="Assets/astroPicWhite.png"/>
+                </StackPanel>
+            </Button>
         </Grid>
+
+
+
+
+        <!--<Button Content="Physics" Grid.Row="1" Grid.Column="2" Click="PhysicsButton_Click" Margin="10,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" Background="#8ABCD7" BorderBrush="White"/>
+            <Button Content="Mathematics" Grid.Row="1" Grid.Column="3" Click="MathButton_Click" Margin="10,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" Background="#8ABCD7" BorderBrush="White"/>
+            <Button Content="Astrophysics" Grid.Row="1" Grid.Column="4" Click="AstroButton_Click" Margin="10,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" Background="#8ABCD7" BorderBrush="White"/>-->
 
 
         <!--<Grid>

@@ -9,20 +9,21 @@
     Background="#8ABCD7">
 
     <Grid>
+    <Image Source="/Assets/drgoobs-high-resolution-logo.png" Opacity="0.3"/>
 
 
         <Grid >
             <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center">
-                <Button Content="Lessons" Click="LessonsButton_Click" FontSize="24" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30"/>
-                <Button Content="Solver" Click="SolverButton_Click" FontSize="36" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30"/>
+                <Button Content="Lessons" Click="LessonsButton_Click" FontSize="24" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30" BorderBrush="White"/>
+                <Button Content="Solver" Click="SolverButton_Click" FontSize="36" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,30" BorderBrush="White"/>
 
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
-                    <Button Content="Settings" Click="SettingsButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" Margin="0,0,30,10"/>
-                    <Button Content="Help" Click="HelpButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"   Foreground="White" Margin="0,0,30,10"/>
-                    <Button Content="About" Click="AboutButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"   Foreground="White" Margin="0,0,30,10"/>
+                    <Button Content="Settings" Click="SettingsButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" Margin="0,0,30,10" BorderBrush="White"/>
+                    <Button Content="Help" Click="HelpButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"   Foreground="White" Margin="0,0,30,10" BorderBrush="White"/>
+                    <Button Content="About" Click="AboutButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"   Foreground="White" Margin="0,0,30,10" BorderBrush="White"/>
                 </StackPanel>
 
-                <Button Content="Exit" Click="ExitButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,0"/>
+                <Button Content="Exit" Click="ExitButton_Click" FontSize="18" FontFamily="/Assets/Armata-Regular.ttf#Armata"  Foreground="White" HorizontalAlignment="Center" Margin="0,0,0,0" BorderBrush="White"/>
             </StackPanel>
         </Grid>
         

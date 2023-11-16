@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Equationator.SolveForForce"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Equationator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#8ABCD7">
+
+    <Grid>
+        <Grid>
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <TextBlock FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" Text="Mass:"/>
+                <TextBox x:Name="MassTextBox" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"  PlaceholderText="Enter mass" BorderBrush="White"/>
+
+                <TextBlock FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"  Text="Gravity:"/>
+                <TextBox x:Name="GravityTextBox" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"  PlaceholderText="Enter gravity" BorderBrush="White"/>
+
+                <Button Content="Calculate" Click="OnCalculateClicked" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" BorderBrush="White" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+
+                <TextBlock x:Name="ResultTextBlock" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"  Text=""/>
+            </StackPanel>
+        </Grid>
+        <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

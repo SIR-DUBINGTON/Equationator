@@ -6,16 +6,58 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#8ABCD7">
 
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center">SOLVER</TextBlock>
+  <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
 
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="15" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- First Button -->
+            <Button Click="PhysicsButton_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Physics Formulas" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="/Assets/physicsPicWhite2.png" />
+                </StackPanel>
+            </Button>
+
+            <!-- Second Button -->
+            <Button Click="MathButton_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Mathematics Formulas" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="/Assets/mathsPicWhite.png" />
+                </StackPanel>
+            </Button>
+
+            <!-- Third Button -->
+            <Button Click="AstroButton_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <StackPanel>
+                    <TextBlock Text="Astrophysics Formulas" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <Image Height="36" Width="36" Source="Assets/astroPicWhite.png"/>
+                </StackPanel>
+            </Button>
+        </Grid>
         <!-- Other page content goes here -->
-
             <!-- Include the custom back button control -->
             <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        </Grid>
+   </Grid>
 
+    
+    
+    
 </Page>

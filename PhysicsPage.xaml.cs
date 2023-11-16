@@ -24,9 +24,8 @@ namespace Equationator
     {
         private List<string> funFacts = new List<string>
     {
-        "Fun Fact 1: ...",
-        "Fun Fact 2: ...",
-        "Fun Fact 3: ...",
+        "According to Einstein's theory of relativity, time is relative, and this is demonstrated by the Twin Paradox. If one twin travels into space at near the speed of light and returns, they would age more slowly than the twin who stayed on Earth. This paradox shows the fascinating nature of time dilation.",
+        "In the quantum world, particles can exist in multiple states simultaneously, a phenomenon known as superposition. This is famously illustrated by Schrödinger's cat, a thought experiment where a cat inside a sealed box is both alive and dead until the box is opened and the cat's state is observed.",
         // Add more fun facts here
     };
 
@@ -45,6 +44,21 @@ namespace Equationator
             // Display a random fun fact in the TextBox
             int randomIndex = random.Next(funFacts.Count);
             FunFactsTextBox.Text = funFacts[randomIndex];
+        }
+
+        private void NavigateToPhysicsPage(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PhysicsPage));
+        }
+
+        private void NavigateToMathsPage(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(MathsPage));
+        }
+
+        private void NavigateToAstroPage(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(AstroPage));
         }
     }
 }

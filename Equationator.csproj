@@ -128,14 +128,12 @@
     <Compile Include="HelpPage.xaml.cs">
       <DependentUpon>HelpPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="IFormula.cs" />
     <Compile Include="LessonAreaLayout.xaml.cs">
       <DependentUpon>LessonAreaLayout.xaml</DependentUpon>
     </Compile>
     <Compile Include="LessonsControl.xaml.cs">
       <DependentUpon>LessonsControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="LessonsNav.xaml.cs">
-      <DependentUpon>LessonsNav.xaml</DependentUpon>
     </Compile>
     <Compile Include="LessonsPage.xaml.cs">
       <DependentUpon>LessonsPage.xaml</DependentUpon>
@@ -146,12 +144,22 @@
     <Compile Include="MathsPage.xaml.cs">
       <DependentUpon>MathsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PhysicsFormulas.cs" />
     <Compile Include="PhysicsPage.xaml.cs">
       <DependentUpon>PhysicsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PhysicsSolverPage.xaml.cs">
+      <DependentUpon>PhysicsSolverPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForForce.xaml.cs">
+      <DependentUpon>SolveForForce.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForMass.xaml.cs">
+      <DependentUpon>SolveForMass.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolverPage.xaml.cs">
       <DependentUpon>SolverPage.xaml</DependentUpon>
@@ -166,10 +174,17 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\astroPic.png" />
+    <Content Include="Assets\astroPicWhite.png" />
     <Content Include="Assets\drgoobs-high-resolution-logo-transparent.png" />
     <Content Include="Assets\drgoobs-high-resolution-logo.png" />
     <Content Include="Assets\mathbackground.jpg" />
+    <Content Include="Assets\mathPic.png" />
     <Content Include="Assets\mathsnumbers.mp4" />
+    <Content Include="Assets\mathsPicWhite.png" />
+    <Content Include="Assets\physicsPic.png" />
+    <Content Include="Assets\physicsPicWhite.png" />
+    <Content Include="Assets\physicsPicWhite2.png" />
     <Content Include="Assets\SplashScreen.scale-100.png" />
     <Content Include="Assets\SplashScreen.scale-125.png" />
     <Content Include="Assets\SplashScreen.scale-150.png" />
@@ -226,10 +241,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LessonsNav.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="LessonsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -246,7 +257,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="PhysicsSolverPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SettingsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForForce.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForMass.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
