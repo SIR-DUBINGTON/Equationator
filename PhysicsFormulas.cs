@@ -26,22 +26,38 @@ namespace Equationator
             return f;
         }
 
-        public double CalculateForm()
+        public double CalculateTerm2()
         {
             Console.WriteLine($"Force: {f}, Gravity: {g}");
             double m = f / g;
             Console.WriteLine($"Result: {m}");
             return m;
         }
+        public double CalculateTerm3()
+        {
+            Console.WriteLine($"Force: {f}, Mass: {m}");
+            double g = f / m;
+            Console.WriteLine($"Result: {g}");
+            return g;
+        }
 
+        public double CalculateTerm4()
+        {
+            return 0;
+        }
         public string GetFormula()
         {
             return "F = m * g";
         }
 
-        public string GetFormulaForm()
+        public string GetFormulaTerm2()
         {
-            return "m = f / g";
+            return "m = F / g";
+        }
+
+        public string GetFormulaTerm3()
+        {
+            return "g = F / m";
         }
     }
 }

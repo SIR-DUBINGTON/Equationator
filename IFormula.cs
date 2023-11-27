@@ -9,10 +9,11 @@ namespace Equationator
     public interface IFormula
     {
         double Calculate();
-        double CalculateForm();
+        double CalculateTerm2();
+        double CalculateTerm3();
+        double CalculateTerm4();
         string GetFormula();
 
     }
-
 
 }

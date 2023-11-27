@@ -20,9 +20,9 @@ namespace Equationator
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SolveForMass : Page
+    public sealed partial class SolveForInitialV : Page
     {
-        public SolveForMass()
+        public SolveForInitialV()
         {
             this.InitializeComponent();
         }
@@ -39,8 +39,8 @@ namespace Equationator
         {
             switch (formulaType)
             {
-                case "Mass":
-                    return new PhysicsFormulas(parameters[0], parameters[1], parameters[2]);
+                case "Initial Velocity":
+                    return new PhysicsFormulaVelocity(parameters[0], parameters[1], parameters[2], parameters[3]);
                 // Add cases for other formula types
                 default:
                     throw new ArgumentException("Invalid formula type");
@@ -51,16 +51,16 @@ namespace Equationator
         private void OnCalculateClicked(object sender, RoutedEventArgs e)
         {
             // Get user input
-            if (double.TryParse(ForceTextBox.Text, out double f) && double.TryParse(GravityTextBox.Text, out double g) && double.TryParse(GravityTextBox.Text, out double m))
+            if (double.TryParse(AccelerationTextBox.Text, out double a) && double.TryParse(TimeTextBox.Text, out double t) && double.TryParse(VelocityTextBox.Text, out double v) && double.TryParse(VelocityTextBox.Text, out double u))
             {
                 // Create the formula instance
-                IFormula formula = CreateFormula("Mass", m, g, f);
+                IFormula formula = CreateFormula("Initial Velocity", u, a, t, v);
 
                 // Perform the calculation
                 double result = formula.CalculateTerm2();
 
                 // Display the result
-                ResultTextBlock.Text = $"Result: {result} Kilograms, kg";
+                ResultTextBlock.Text = $"Result: {result} m/s";
             }
             else
             {

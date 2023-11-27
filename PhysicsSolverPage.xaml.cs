@@ -38,7 +38,46 @@ namespace Equationator
         {
             Frame.Navigate(typeof(SolveForMass));
         }
+
+        private void SolveForG_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForGravity));
+        }
+
+        private void SolveForV_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForVelocity));
+        }
  
+        private void SolveForU_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForInitialV));
+        }
+
+        private void SolveForA_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForAcceleration));
+        }
+
+        private void SolveForT_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForTime));
+        }
+
+        private void SolveForKE_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForKineticEnergy));
+        }
+
+        private void SolveForMke_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForMassKineticEnergy));
+        }
+
+        private void SolveForVKe_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveForVelocityKineticEnergy));
+        }
 
     }
 

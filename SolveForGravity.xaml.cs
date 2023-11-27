@@ -20,16 +20,16 @@ namespace Equationator
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class SolveForMass : Page
+    public sealed partial class SolveForGravity : Page
     {
-        public SolveForMass()
+        public SolveForGravity()
         {
             this.InitializeComponent();
         }
 
         public void CalculateAndDisplay(IFormula formula)
         {
-            double result = formula.CalculateTerm2();
+            double result = formula.Calculate();
             string formulaExpression = formula.GetFormula();
 
             // Display or use the result and formula expression as needed
@@ -39,7 +39,7 @@ namespace Equationator
         {
             switch (formulaType)
             {
-                case "Mass":
+                case "Gravity":
                     return new PhysicsFormulas(parameters[0], parameters[1], parameters[2]);
                 // Add cases for other formula types
                 default:
@@ -51,20 +51,20 @@ namespace Equationator
         private void OnCalculateClicked(object sender, RoutedEventArgs e)
         {
             // Get user input
-            if (double.TryParse(ForceTextBox.Text, out double f) && double.TryParse(GravityTextBox.Text, out double g) && double.TryParse(GravityTextBox.Text, out double m))
+            if (double.TryParse(ForceTextBox.Text, out double f) && double.TryParse(MassTextBox.Text, out double m) && double.TryParse(MassTextBox.Text, out double g))
             {
                 // Create the formula instance
-                IFormula formula = CreateFormula("Mass", m, g, f);
+                IFormula formula = CreateFormula("Gravity", m, g, f);
 
                 // Perform the calculation
-                double result = formula.CalculateTerm2();
+                double result = formula.CalculateTerm3();
 
                 // Display the result
-                ResultTextBlock.Text = $"Result: {result} Kilograms, kg";
+                ResultTextBlock.Text = $"Result: {result} m/s^2";
             }
             else
             {
-                ResultTextBlock.Text = "Invalid input. Please enter valid numbers for force and gravity.";
+                ResultTextBlock.Text = "Invalid input. Please enter valid numbers for force and mass.";
             }
         }
     }

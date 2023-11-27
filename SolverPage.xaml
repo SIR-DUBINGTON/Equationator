@@ -9,7 +9,7 @@
     Background="#8ABCD7">
 
 
-  <Grid>
+    <Grid>
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
@@ -53,11 +53,7 @@
             </Button>
         </Grid>
         <!-- Other page content goes here -->
-            <!-- Include the custom back button control -->
-            <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
-   </Grid>
+        <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
+    </Grid>
 
-    
-    
-    
 </Page>

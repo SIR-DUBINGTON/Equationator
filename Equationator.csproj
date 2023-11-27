@@ -141,10 +141,17 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MathAreaRectangle.cs" />
+    <Compile Include="MathAreaTrapezoid.cs" />
+    <Compile Include="MathSolverPage.xaml.cs">
+      <DependentUpon>MathSolverPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MathsPage.xaml.cs">
       <DependentUpon>MathsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PhysicsFormulaKineticEnergy.cs" />
     <Compile Include="PhysicsFormulas.cs" />
+    <Compile Include="PhysicsFormulaVelocity.cs" />
     <Compile Include="PhysicsPage.xaml.cs">
       <DependentUpon>PhysicsPage.xaml</DependentUpon>
     </Compile>
@@ -155,11 +162,50 @@
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SolveAreaRectangle.xaml.cs">
+      <DependentUpon>SolveAreaRectangle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaRectangleB.xaml.cs">
+      <DependentUpon>SolveAreaRectangleB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaRectangleH.xaml.cs">
+      <DependentUpon>SolveAreaRectangleH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaTrapezoid.xaml.cs">
+      <DependentUpon>SolveAreaTrapezoid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaTrapezoidB.xaml.cs">
+      <DependentUpon>SolveAreaTrapezoidB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForAcceleration.xaml.cs">
+      <DependentUpon>SolveForAcceleration.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SolveForForce.xaml.cs">
       <DependentUpon>SolveForForce.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SolveForGravity.xaml.cs">
+      <DependentUpon>SolveForGravity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForInitialV.xaml.cs">
+      <DependentUpon>SolveForInitialV.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForKineticEnergy.xaml.cs">
+      <DependentUpon>SolveForKineticEnergy.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SolveForMass.xaml.cs">
       <DependentUpon>SolveForMass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForMassKineticEnergy.xaml.cs">
+      <DependentUpon>SolveForMassKineticEnergy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForTime.xaml.cs">
+      <DependentUpon>SolveForTime.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForVelocity.xaml.cs">
+      <DependentUpon>SolveForVelocity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveForVelocityKineticEnergy.xaml.cs">
+      <DependentUpon>SolveForVelocityKineticEnergy.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolverPage.xaml.cs">
       <DependentUpon>SolverPage.xaml</DependentUpon>
@@ -249,6 +295,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="MathSolverPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MathsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -265,11 +315,63 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SolveAreaRectangle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaRectangleB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaRectangleH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaTrapezoid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaTrapezoidB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForAcceleration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SolveForForce.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SolveForGravity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForInitialV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForKineticEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SolveForMass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForMassKineticEnergy.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForTime.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForVelocity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveForVelocityKineticEnergy.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

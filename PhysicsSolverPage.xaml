@@ -9,8 +9,9 @@
     Background="#8ABCD7">
 
     <Grid>
+        <Grid>
         <Button Click="SolveForF_Click" Background="#8ABCD7" BorderBrush="White" 
-                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,0,0,0">
             <StackPanel>
                 <TextBlock Text="F = m x g" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
             </StackPanel>
@@ -18,13 +19,86 @@
 
 
         <Button Click="SolveForM_Click" Background="#8ABCD7" BorderBrush="White" 
-        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,100,0,0">
             <StackPanel>
                 <TextBlock Text="m = F / g" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
             </StackPanel>
         </Button>
 
+        <Button Click="SolveForG_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="-300,200,0,0">
+            <StackPanel>
+                <TextBlock Text="g = F / m" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+            </StackPanel>
+        </Button>
+
         <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </Grid>
+    
+        <Grid>
+            <Button Click="SolveForV_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+                <StackPanel>
+                    <TextBlock Text="v = u + a * t" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForU_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 100,0,0">
+                <StackPanel>
+                    <TextBlock Text="u = -(a) * t + v" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForA_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 200,0,0">
+                <StackPanel>
+                    <TextBlock Text="a = (-u + v) / t" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForT_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0, 300,0,0">
+                <StackPanel>
+                    <TextBlock Text="t = (-u + v) / a" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForKE_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300, 0,0,0">
+                <StackPanel>
+                    <TextBlock Text="KE = 1/2(mv^2)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForMke_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300, 100,0,0">
+                <StackPanel>
+                    <TextBlock Text="m = 2KE / v^2" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForVKe_Click" Background="#8ABCD7" BorderBrush="White" 
+        Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300, 200,0,0">
+                <StackPanel>
+                    <TextBlock Text="v = SQRT(2 * h / m)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
 
     </Grid>
+    
+    
 </Page>

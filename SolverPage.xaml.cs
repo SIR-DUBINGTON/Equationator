@@ -34,7 +34,7 @@ namespace Equationator
 
         private void MathButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MathsPage));
+            Frame.Navigate(typeof(MathSolverPage));
         }
 
         private void AstroButton_Click(object sender, RoutedEventArgs e)
