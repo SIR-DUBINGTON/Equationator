@@ -265,8 +265,8 @@
   <ItemGroup>
     <Content Include="Assets\astroPic.png" />
     <Content Include="Assets\astroPicWhite.png" />
-    <Content Include="Assets\drgoobs-high-resolution-logo-transparent.png" />
-    <Content Include="Assets\drgoobs-high-resolution-logo.png" />
+    <Content Include="Assets\equationator-high-resolution-logo-transparent.png" />
+    <Content Include="Assets\equationator-high-resolution-logo.png" />
     <Content Include="Assets\mathbackground.jpg" />
     <Content Include="Assets\mathPic.png" />
     <Content Include="Assets\mathsnumbers.mp4" />

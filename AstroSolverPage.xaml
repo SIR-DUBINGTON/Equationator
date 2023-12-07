@@ -9,6 +9,8 @@
     Background="#8ABCD7">
 
     <Grid>
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Astrophysics Formulas</TextBlock>
+
 
         <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
 

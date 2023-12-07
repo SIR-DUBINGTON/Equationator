@@ -9,6 +9,7 @@
     Background="#8ABCD7">
 
     <Grid>
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Astrophysics Lessons</TextBlock>
         <Grid>
             <local:UserNav VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
         </Grid>
@@ -50,7 +51,7 @@
         <RichTextBlock Width="300" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <RichTextBlock.Blocks>
                 <Paragraph TextAlignment="Left">
-                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Astrophysics is the branch of astronomy that employs the principles of physics and chemistry to understand the nature, behavior, and evolution of celestial bodies and the cosmos at large. By investigating phenomena such as black holes, galaxies, and the cosmic microwave background, astrophysics unveils the secrets of the universe's origin. It plays a crucial role in expanding our knowledge of the cosmos and addressing profound questions about our existence. Astrophysical discoveries lead to technological advancements and inspire curiosity, emphasizing its significance." FontWeight="Bold" Foreground="white" FontSize="18" />
+                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Astrophysics is the branch of astronomy that employs the principles of physics and chemistry to understand the nature, behavior, and evolution of celestial bodies and the cosmos at large. By investigating phenomena such as black holes, galaxies, and the cosmic microwave background, astrophysics unveils the secrets of the universe's origin. It plays a crucial role in expanding our knowledge of the cosmos and addressing profound questions about our existence. Astrophysical discoveries lead to technological advancements and inspire curiosity, emphasizing its significance." Foreground="white" FontSize="18" />
                 </Paragraph>
             </RichTextBlock.Blocks>
         </RichTextBlock>

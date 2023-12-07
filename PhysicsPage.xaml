@@ -9,7 +9,7 @@
     Background="#8ABCD7">
 
     <Grid>
-        
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Physics Lessons</TextBlock>
         <Grid>
             <local:UserNav VerticalAlignment="Top" HorizontalAlignment="Left" Width="200"/>
         </Grid>
@@ -51,7 +51,7 @@
         <RichTextBlock Width="300" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <RichTextBlock.Blocks>
                 <Paragraph TextAlignment="Left">
-                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Physics is the branch of science that explores the fundamental principles governing the natural world, aiming to understand the fundamental laws that govern the behavior of matter, energy, space, and time. It seeks to explain the complexities of the universe, from the smallest particles at the quantum level to the vast expanses of galaxies. The importance of physics lies in its ability to uncover the underlying principles of the cosmos, enabling us to develop new technologies, make informed decisions, and deepen our appreciation of the intricate beauty of the universe." FontWeight="Bold" Foreground="white" FontSize="18" />
+                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Physics is the branch of science that explores the fundamental principles governing the natural world, aiming to understand the fundamental laws that govern the behavior of matter, energy, space, and time. It seeks to explain the complexities of the universe, from the smallest particles at the quantum level to the vast expanses of galaxies. The importance of physics lies in its ability to uncover the underlying principles of the cosmos, enabling us to develop new technologies, make informed decisions, and deepen our appreciation of the intricate beauty of the universe." Foreground="white" FontSize="18" />
                 </Paragraph>
             </RichTextBlock.Blocks>
         </RichTextBlock>

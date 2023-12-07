@@ -35,7 +35,7 @@ namespace Equationator
         public MathsPage()
         {
             this.InitializeComponent();
-            timer.Interval = TimeSpan.FromSeconds(5); // Set the timer interval to 30 seconds
+            timer.Interval = TimeSpan.FromSeconds(30); // Set the timer interval to 30 seconds
             timer.Tick += Timer_Tick;
             timer.Start();
         }

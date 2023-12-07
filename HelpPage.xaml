@@ -6,13 +6,55 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#8ABCD7">
 
-        
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36">HELP</TextBlock>
 
+    <Grid>
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Equationator Help</TextBlock>
 
         <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <Grid>
+            <RichTextBlock Width="300" Height="240" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,100,0,0">
+                <RichTextBlock.Blocks>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Solving Equations" FontWeight="Bold" Foreground="white" FontSize="18" />
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="
+                        The program will solve the entered coefficients for the equation and display the result. Simply press the 'Solve' button to get the solution." FontWeight="Normal" Foreground="white" FontSize="18" />
+                    </Paragraph>
+                </RichTextBlock.Blocks>
+            </RichTextBlock>
         </Grid>
+
+        <Grid>
+            <RichTextBlock Width="300" Height="300" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,0,0,0">
+                <RichTextBlock.Blocks>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Need Help?" FontWeight="Bold" Foreground="white" FontSize="18" />
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="
+                        Encountering any issues? If you any have questions about using Equationator, feel free to reach out to our support team at support@equationator.com. Happy Equation Solving!" FontWeight="Normal" Foreground="white" FontSize="18" />
+                    </Paragraph>
+                </RichTextBlock.Blocks>
+            </RichTextBlock>
+        </Grid>
+
+
+        <Grid>
+            <RichTextBlock Width="300" Height="220" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,150">
+                <RichTextBlock.Blocks>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Clear and Undo" FontWeight="Bold" Foreground="white" FontSize="18" />
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text=" " FontWeight="Normal" Foreground="white" FontSize="18" />
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="
+                        
+                         If you want to start over or undo your last action, you can use the 'Clear' and 'Back' buttons, respectively." FontWeight="Normal" Foreground="white" FontSize="18" />
+                    </Paragraph>
+                </RichTextBlock.Blocks>
+            </RichTextBlock>
+        </Grid>
+
+
+    </Grid>
+
+
 </Page>

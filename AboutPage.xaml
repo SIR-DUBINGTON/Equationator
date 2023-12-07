@@ -6,12 +6,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#8ABCD7">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36">ABOUT</TextBlock>
+    <Grid>
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">About</TextBlock>
+
+        <Grid>
+            <RichTextBlock Width="650" Height="375" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
+                <RichTextBlock.Blocks>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Welcome to Equationator – Your Ultimate Math Equation Solver!" FontWeight="Bold" Foreground="white" FontSize="18" />
+                    </Paragraph>
+                    <Paragraph TextAlignment="Left">
+                        <Run FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="At Equationator, we believe in making mathematics accessible, enjoyable, and hassle-free. Whether you're a student navigating the complexities of algebra, a professional tackling advanced equations, or a hobbyist exploring the beauty of mathematical expressions, Equationator is your go-to Universal Windows Platform (UWP) program." FontWeight="Normal" Foreground="white" FontSize="18" />
+                    </Paragraph>
+                    <!-- Add additional paragraphs for each section of the "Key Features" and "Join the Equationator Community" -->
+                </RichTextBlock.Blocks>
+            </RichTextBlock>
+        </Grid>
+
 
 
         <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        </Grid>
+     </Grid>
 </Page>

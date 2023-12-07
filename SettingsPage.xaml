@@ -6,12 +6,26 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    Background="#8ABCD7">
 
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36">SETTINGS</TextBlock>
+    <Grid>
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Settings</TextBlock>
 
 
         <local:UserNav HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        </Grid>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <!-- Other settings items -->
+
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Enable Fullscreen Mode" VerticalAlignment="Center" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" Margin="0,0,10,0"/>
+                <ToggleSwitch x:Name="FullscreenToggleSwitch" Foreground="White" IsOn="{x:Bind IsFullscreenEnabled, Mode=TwoWay}" />
+            </StackPanel>
+            <!-- Usage Analytics Toggle Switch -->
+            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
+                <TextBlock Text="Enable Usage Analytics" VerticalAlignment="Center" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"  Margin="0,0,10,0"/>
+                <ToggleSwitch x:Name="AnalyticsToggleSwitch" Foreground="White" IsOn="True"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
 </Page>

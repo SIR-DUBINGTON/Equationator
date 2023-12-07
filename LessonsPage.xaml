@@ -10,6 +10,8 @@
 
     <Grid>
 
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Lessons Area</TextBlock>
+
         <local:UserNav x:Name="UserNav" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" />
 
         <Grid>

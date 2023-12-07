@@ -9,7 +9,7 @@
     Background="#8ABCD7">
 
     <Grid>
-
+        <TextBlock Margin="0,0,0,20" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" FontSize="36">Mathematics Lessons</TextBlock>
         <Grid>
             <local:UserNav VerticalAlignment="Top" HorizontalAlignment="Left" Width="225"/>
         </Grid>
@@ -51,7 +51,7 @@
         <RichTextBlock Width="300" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center">
             <RichTextBlock.Blocks>
                 <Paragraph TextAlignment="Left">
-                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Mathematics is the language of patterns, logic, and relationships, providing a framework for understanding the fundamental structures of our world. It is a universal tool that transcends cultural and linguistic barriers, allowing us to express and communicate ideas with clarity. Mathematics is crucial for solving problems in various fields, from science and engineering to economics and technology. Its importance lies in its role as a base block for critical thinking, problem-solving, and innovation, making it an indispensable tool for navigating the complexities of the modern world." FontWeight="Bold" Foreground="white" FontSize="18" />
+                    <Run  FontFamily="/Assets/Armata-Regular.ttf#Armata" Text="Mathematics is the language of patterns, logic, and relationships, providing a framework for understanding the fundamental structures of our world. It is a universal tool that transcends cultural and linguistic barriers, allowing us to express and communicate ideas with clarity. Mathematics is crucial for solving problems in various fields, from science and engineering to economics and technology. Its importance lies in its role as a base block for critical thinking, problem-solving, and innovation, making it an indispensable tool for navigating the complexities of the modern world." Foreground="white" FontSize="18" />
                 </Paragraph>
             </RichTextBlock.Blocks>
         </RichTextBlock>

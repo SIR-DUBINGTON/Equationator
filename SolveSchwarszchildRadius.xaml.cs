@@ -27,6 +27,15 @@ namespace Equationator
             this.InitializeComponent();
         }
 
+        private void OnClearClicked(object sender, RoutedEventArgs e)
+        {
+            // Clear the content of TextBox fields
+            GravitationalConstantTextBox.Text = string.Empty;
+            MassTextBox.Text = string.Empty;
+            // You may add similar lines for other TextBox fields if needed
+            ResultTextBlock.Text = string.Empty;
+        }
+
         public void CalculateAndDisplay(IFormula formula)
         {
             double result = formula.Calculate();
