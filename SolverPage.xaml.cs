@@ -39,7 +39,7 @@ namespace Equationator
 
         private void AstroButton_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(AstroPage));
+            Frame.Navigate(typeof(AstroSolverPage));
         }
     }
 }

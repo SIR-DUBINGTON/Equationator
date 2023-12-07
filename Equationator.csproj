@@ -125,6 +125,10 @@
     <Compile Include="AstroPage.xaml.cs">
       <DependentUpon>AstroPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AstroSolverPage.xaml.cs">
+      <DependentUpon>AstroSolverPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FocalRatio.cs" />
     <Compile Include="HelpPage.xaml.cs">
       <DependentUpon>HelpPage.xaml</DependentUpon>
     </Compile>
@@ -141,6 +145,7 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MathAreaCircle.cs" />
     <Compile Include="MathAreaRectangle.cs" />
     <Compile Include="MathAreaTrapezoid.cs" />
     <Compile Include="MathSolverPage.xaml.cs">
@@ -159,8 +164,16 @@
       <DependentUpon>PhysicsSolverPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Redshift.cs" />
+    <Compile Include="SchwarszchildRadius.cs" />
     <Compile Include="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaCircle.xaml.cs">
+      <DependentUpon>SolveAreaCircle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaCircleR.xaml.cs">
+      <DependentUpon>SolveAreaCircleR.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolveAreaRectangle.xaml.cs">
       <DependentUpon>SolveAreaRectangle.xaml</DependentUpon>
@@ -176,6 +189,21 @@
     </Compile>
     <Compile Include="SolveAreaTrapezoidB.xaml.cs">
       <DependentUpon>SolveAreaTrapezoidB.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaTrapezoidH.xaml.cs">
+      <DependentUpon>SolveAreaTrapezoidH.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveAreaTrapezoidW.xaml.cs">
+      <DependentUpon>SolveAreaTrapezoidW.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveFocalRatio.xaml.cs">
+      <DependentUpon>SolveFocalRatio.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveFocalRatioD.xaml.cs">
+      <DependentUpon>SolveFocalRatioD.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveFocalRatioF.xaml.cs">
+      <DependentUpon>SolveFocalRatioF.xaml</DependentUpon>
     </Compile>
     <Compile Include="SolveForAcceleration.xaml.cs">
       <DependentUpon>SolveForAcceleration.xaml</DependentUpon>
@@ -207,8 +235,23 @@
     <Compile Include="SolveForVelocityKineticEnergy.xaml.cs">
       <DependentUpon>SolveForVelocityKineticEnergy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SolveRedshift.xaml.cs">
+      <DependentUpon>SolveRedshift.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveRedshiftV.xaml.cs">
+      <DependentUpon>SolveRedshiftV.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SolverPage.xaml.cs">
       <DependentUpon>SolverPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveSchwarszchildGravity.xaml.cs">
+      <DependentUpon>SolveSchwarszchildGravity.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveSchwarszchildMass.xaml.cs">
+      <DependentUpon>SolveSchwarszchildMass.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SolveSchwarszchildRadius.xaml.cs">
+      <DependentUpon>SolveSchwarszchildRadius.xaml</DependentUpon>
     </Compile>
     <Compile Include="UserNav.xaml.cs">
       <DependentUpon>UserNav.xaml</DependentUpon>
@@ -275,6 +318,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AstroSolverPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="HelpPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -315,6 +362,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SolveAreaCircle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaCircleR.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SolveAreaRectangle.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -332,6 +387,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SolveAreaTrapezoidB.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaTrapezoidH.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveAreaTrapezoidW.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveFocalRatio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveFocalRatioD.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveFocalRatioF.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -375,7 +450,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="SolveRedshift.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveRedshiftV.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="SolverPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveSchwarszchildGravity.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveSchwarszchildMass.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SolveSchwarszchildRadius.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

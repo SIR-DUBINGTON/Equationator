@@ -51,7 +51,43 @@
             <Button Click="SolveForTrapezoidB_Click" Background="#8ABCD7" BorderBrush="White" 
                 Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,100,0,0">
                 <StackPanel>
-                    <TextBlock Text="b = (2 * A) / (h + w)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                    <TextBlock Text="b = (2 * A) / (h + a)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForTrapezoidH_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,200,0,0">
+                <StackPanel>
+                    <TextBlock Text="h = (2 * A) / (a + b)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForTrapezoidW_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,300,0,0">
+                <StackPanel>
+                    <TextBlock Text="w = (-b * h) + (2 * A) / h" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForCircle_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,0,0,0">
+                <StackPanel>
+                    <TextBlock Text="A = π * r^2" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+        <Grid>
+            <Button Click="SolveForCircleR_Click" Background="#8ABCD7" BorderBrush="White" 
+                Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="300,100,0,0">
+                <StackPanel>
+                    <TextBlock Text="r = SQRT(A / π)" Margin="0,0,0,0" FontFamily="/Assets/Armata-Regular.ttf#Armata" Foreground="White"/>
                 </StackPanel>
             </Button>
         </Grid>

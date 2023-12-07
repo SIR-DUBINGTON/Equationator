@@ -51,5 +51,25 @@ namespace Equationator
         {
             Frame.Navigate(typeof(SolveAreaTrapezoidB));
         }
+
+        private void SolveForTrapezoidH_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveAreaTrapezoidH));
+        }
+
+        private void SolveForTrapezoidW_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveAreaTrapezoidW));
+        }
+
+        private void SolveForCircle_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveAreaCircle));
+        }
+
+        private void SolveForCircleR_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(SolveAreaCircleR));
+        }
     }
 }

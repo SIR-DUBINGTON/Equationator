@@ -48,7 +48,7 @@ namespace Equationator
         public double CalculateTerm4()
         {
             Console.WriteLine($"Area: {A}, Breadth: {b}, Height: {h}");
-            double a = (2 * A) / (b + h);
+            double w = ((-b * h) + (2 * A)) / h;
             Console.WriteLine($"Result: {w}");
             return w;
         }
