@@ -14,26 +14,37 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Animation;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Equationator
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// UserNav is a class representing a page with a navigation menu.
     /// </summary>
     public sealed partial class UserNav : Page
     {
+        /// <summary>
+        /// Constructor for the UserNav class.
+        /// Initializes the UserNav page and sets the initial position for the rendering transformation.
+        /// </summary>
         public UserNav()
         {
             this.InitializeComponent();
             RenderTransform = new TranslateTransform { X = -Width };
         }
 
+        /// <summary>
+        /// Event handler for the HamburgerButton click.
+        /// Toggles the visibility of the navigation pane.
+        /// </summary>
         private void HamburgerButton_Click(object sender, RoutedEventArgs e)
         {
             MySplitView.IsPaneOpen = !MySplitView.IsPaneOpen;
         }
 
+        /// <summary>
+        /// Event handler for the IconsListBox selection change.
+        /// Navigates to the selected page based on the ListBoxItem's name.
+        /// </summary>
         private void IconsListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Frame rootFrame = Window.Current.Content as Frame;

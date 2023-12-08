@@ -1,4 +1,5 @@
-﻿using System;
+﻿// Import necessary namespaces
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -13,17 +14,23 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
+// Namespace for the application
 namespace Equationator
 {
     /// <summary>
+    /// AboutPage class represents a page providing information about the application.
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
     public sealed partial class AboutPage : Page
     {
+        /// <summary>
+        /// Constructor for the AboutPage class.
+        /// Initializes the page components.
+        /// </summary>
         public AboutPage()
         {
+            // Initialize the page components (UI elements)
             this.InitializeComponent();
         }
     }

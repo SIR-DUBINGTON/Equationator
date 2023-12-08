@@ -14,15 +14,17 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Equationator
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// SettingsPage is a class that represents the settings page of the application.
     /// </summary>
     public sealed partial class SettingsPage : Page
     {
+        /// <summary>
+        /// Constructor for the SettingsPage class.
+        /// </summary>
         public SettingsPage()
         {
             this.InitializeComponent();
@@ -30,6 +32,10 @@ namespace Equationator
         }
 
         private bool _isFullscreenEnabled;
+
+        /// <summary>
+        /// Property to get or set whether fullscreen mode is enabled.
+        /// </summary>
         public bool IsFullscreenEnabled
         {
             get => _isFullscreenEnabled;
@@ -52,7 +58,5 @@ namespace Equationator
                 }
             }
         }
-
     }
 }
-

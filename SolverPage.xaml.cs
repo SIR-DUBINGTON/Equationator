@@ -13,30 +13,44 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Equationator
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// SolverPage is a class representing the main page with navigation buttons for different solver categories.
     /// </summary>
     public sealed partial class SolverPage : Page
     {
+        /// <summary>
+        /// Constructor for the SolverPage class.
+        /// </summary>
         public SolverPage()
         {
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Event handler for the "Physics" button click.
+        /// Navigates to the PhysicsSolverPage when the button is clicked.
+        /// </summary>
         private void PhysicsButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PhysicsSolverPage));
         }
 
+        /// <summary>
+        /// Event handler for the "Math" button click.
+        /// Navigates to the MathSolverPage when the button is clicked.
+        /// </summary>
         private void MathButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MathSolverPage));
         }
 
+        /// <summary>
+        /// Event handler for the "Astro" button click.
+        /// Navigates to the AstroSolverPage when the button is clicked.
+        /// </summary>
         private void AstroButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(AstroSolverPage));

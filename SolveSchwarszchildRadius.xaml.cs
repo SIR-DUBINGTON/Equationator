@@ -13,20 +13,26 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Equationator
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// SolveSchwarszchildRadius is a class representing a page for solving Schwarszchild Radius equations.
     /// </summary>
     public sealed partial class SolveSchwarszchildRadius : Page
     {
+        /// <summary>
+        /// Constructor for the SolveSchwarszchildRadius class.
+        /// </summary>
         public SolveSchwarszchildRadius()
         {
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// Event handler for the "Clear" button click.
+        /// Clears the content of TextBox fields.
+        /// </summary>
         private void OnClearClicked(object sender, RoutedEventArgs e)
         {
             // Clear the content of TextBox fields
@@ -36,6 +42,9 @@ namespace Equationator
             ResultTextBlock.Text = string.Empty;
         }
 
+        /// <summary>
+        /// Method to calculate and display the result using a given formula.
+        /// </summary>
         public void CalculateAndDisplay(IFormula formula)
         {
             double result = formula.Calculate();
@@ -44,6 +53,9 @@ namespace Equationator
             // Display or use the result and formula expression as needed
         }
 
+        /// <summary>
+        /// Method to create a formula based on the formula type and parameters.
+        /// </summary>
         public IFormula CreateFormula(string formulaType, params double[] parameters)
         {
             switch (formulaType)
@@ -56,6 +68,10 @@ namespace Equationator
             }
         }
 
+        /// <summary>
+        /// Event handler for the "Calculate" button click.
+        /// Gets user input, creates a formula instance, performs the calculation, and displays the result.
+        /// </summary>
         private void OnCalculateClicked(object sender, RoutedEventArgs e)
         {
             // Get user input
@@ -75,6 +91,5 @@ namespace Equationator
                 ResultTextBlock.Text = "Invalid input. Please enter valid numbers for force and gravity.";
             }
         }
-
     }
 }
