@@ -22,3 +22,7 @@ Best Practices
 Contributing
 
 Contributions to Equationator are welcome! If you have suggestions or want to contribute to the codebase, please feel free to open an issue or a pull request.
+
+License
+
+This project is licensed under the MIT License.
